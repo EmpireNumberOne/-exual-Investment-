@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>$exualInvestments</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+        <style>
+            html, body {
+			    height:100%;
+			    width: 1200px;
+                background: white;
+                color: black;
+                font-family: arial;
+                margin:  0px;
+                padding: 0px;
+		    }
+            /* Container holding the image and the text */
+            .container {
+                position: absolute;
+                text-align: left;
+                width: 1200px;
+            }
+            .white {
+                position: absolute;
+                top:  420px;
+                bottom: 0px;
+                left:  20px;
+                right:  0px;
+                width: 1100px;
+                height: 3px;
+                background: white;
+                z-index: 1;
+            }      
+
+            /* Navbar container */
+            .navbar {
+                position: absolute;
+                top:  400px;
+                bottom: 0px;
+                left:   0px;
+                right:  0px;
+                width: 1100px;
+                height: 40px;
+                font-size: 50px;
+                font-weight: 550;
+                font-family: serif;
+                overflow: hidden;
+                margin:  10px;
+                padding: 10px;
+                background-color: red;
+            }
+
+            /* Links inside the navbar */
+            .navbar a {
+                float: left;
+                font-size: 20px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            /* The dropdown container */
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+            /* Add a darkblue background color to navbar links on hover */
+            .navbar a:hover, .dropdown:hover .dropbtn {
+                background-color: black;
+                height: 50px;
+            }
+
+            /* Dropdown content (hidden by default) */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            /* Links inside the dropdown */
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            /* Add a grey background color to dropdown links on hover */
+            .dropdown-content a:hover {
+                background-color: #ddd;
+            }
+            .company {
+                position: absolute;
+                top:    20px;
+                bottom:  0px;
+                left:  100px;
+                right:   0px;
+                font-size: 80px;
+                font-weight: 550;
+                font-family: serif;
+                color: red;
+                z-index: 1;
+            }
+            .Elena {
+                position: absolute;
+                top:      0px;
+                bottom:   0px;
+                left:     0px;
+                right:    0px;
+                color:  white;
+            }
+            .sexy {
+                position: absolute;
+                top:  550px;
+                bottom: 0px;
+                left: 600px;
+                right:  0px;
+            }    
+            .message {
+                position: absolute;
+                top:  500px;
+                bottom: 0px;
+                left:  20px;
+                right:  0px;
+                font-size: 30px;
+                font-weight: 550;
+                width:  500px;
+                height: 600px;
+                padding: 5px;
+                margin: 5px;
+                color: black;
+                z-index: 1;
+            }
+            .plain {
+                position: absolute;
+                top:  520px;
+                bottom: 0px;
+                left: 800px;
+                right:  0px;
+            }
+            .border {
+                position: absolute;
+                top: 1080px;
+                bottom: 0px;
+                left:  20px;
+                right:  0px;
+                height: 7px;
+                width: 1300px;
+                background: red;
+            }
+            .ebony {
+                position: absolute;
+                top:  820px;
+                bottom: 0px;
+                left: 550px;
+                right:  0px;
+            }    
+            .contact {
+                position: absolute;
+                top:  900px;
+                bottom: 0px;
+                left: 840px;
+                right:  0px;
+                font-size: 30px;
+                font-weight: 550;
+                width: 800px;
+                color: black;
+            } 
+            .warning {
+                position: absolute;
+                top:  1120px;
+                bottom:  0px;
+                left:  940px;
+                right:   0px;
+                font-size: 20px;
+                font-weight: 500;
+                font-family: serif;
+                width: 400px;
+                color: white;
+                z-index: 1;
+            }
+            .listing {
+                position: absolute;
+                top:   10px;
+                bottom: 0px;
+                left: -40px;
+                right:  0px;
+                font-size: 15px;
+                font-weight: 500;
+                font-family: serif;
+                width: 200px;
+                color: white;
+                z-index: 1;
+                margin:  10px;
+                padding: 10px;
+            }
+            .next {
+                position: absolute;
+                top:   10px;
+                bottom: 0px;
+                left: 140px;
+                right:  0px;
+                font-size: 15px;
+                font-weight: 500;
+                font-family: serif;
+                width: 200px;
+                color: white;
+                z-index: 1;
+                margin:  10px;
+                padding: 10px;
+            }
+            .icon-bar {
+				position: absolute;
+				top:    95px;
+				bottom:  0px;
+				left:  960px;
+				right:   0px;
+                font-size: 50px;
+
+			} 
+            .icon-bar a {
+                color: white;
+            }
+            .line {
+                position: absolute;
+                top:    30px;
+                bottom:  0px;
+                left:   10px;
+                right:   0px;
+                height:  1px;
+                width: 400px;
+                background: white;
+                z-index:   1;
+            }    
+
+            .footer {
+                position: absolute;
+                top:   1100px;
+                bottom:   0px;
+                left:     0px;
+                right:    0px;
+                font-size: 20px;
+                font-weight: 500;
+                font-family: serif;
+                height: 140px;
+                width: 1300px;
+                color: white;
+                background-color: black;
+                margin:  10px;
+                padding: 10px; 
+            }
+            .copyright {
+                position: absolute;
+                top:   130px;
+                bottom:  0px;
+                left:  480px;
+                right:   0px;
+                font-size: 20px;
+                font-weight: 550;
+                font-family: serif;
+                width: 400px;
+                color: white;
+            }  
+
+
+
+
+
+
+        </style>
+        
+
+
+
+            <body>
+                <div class="container">
+                <div class="company">$exual Investment$</div>
+                <div class="Viona">
+                <img src="Images/Elena .jpeg" width="1350" height="400">
+                <div class="white"></div>
+                <div class="navbar">
+                    <a href="amateurs.php"title="Website name">Amateurs</a>
+                    <a href=""title="Website name">Milfs</a>
+                    <a href=""title="Website name">Exotic</a>
+                    <a href="hiddencamera.php"title="Website name">Hidden Camera</a>
+                    <a href="contact.php"title="Website name">Contact Us</a>
+                </div>
+                    <div class="sexy">
+                    <img src="Images/asian.jpg" width="200" height="200"></div> 
+                    <div class="message">$exual Investment$ is the #1 porn website in Las Vegas. $exual Investment$ allow you to invest in yourself. 
+                    Increase your net worth with $exual Investment$. Make anywhere between $500 - $1,000 in one hour. Shoot a sex scene or shoot a nude scene for $exual Investment$.
+                    $exual Investment$ is an equal opportunity employer. Black women, White women and Asian women are welcome. $exual Investment$ believe in safe sex.
+                    All performers are tested prior to filming.</div>
+                    <div class="ebony">
+                    <img src="Images/ebony.jpg" width="200" height="200"></div> 
+                    <div class="contact">Contact Us @ (702) 374-3350 <br>
+                    nate779911@gmail.com</div>
+
+                <div class="plain">
+                    <img src="Images/plain.jpg" width="500" height="350">
+                </div> 
+                <div class="warning">This website is for adults only. 18+ or older</div>        
+
+
+            
+                <div class="border"></div>
+                <div class="footer">
+                    <footer>Visit $exual Investment$ from all over the world:</footer>
+                    <div class="line"></div>
+                    <div class="listing">
+                    <ul style="list-style-type:none;">
+                        <li>United Kingdom</li>
+                        <li>Australia</li>
+                        <li>France</li>
+                        <li>Spain</li>
+                        <li>Japan</li>
+                        <li>Korea</li>
+                    </ul>
+                    </div>
+                    <div class="next">
+                    <ul style="list-style-type:none;">
+                        <li>Phillipines</li>
+                        <li>Thailand</li>
+                        <li>Norway</li>
+                        <li>Russia</li>
+                        <li>Canada</li>
+                        <li>Brazil</li>
+                    </ul>    
+                    </div>
+                    <div class="icon-bar">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+					    <a href="#"><i class="fa fa-instagram"></i></a>
+					    <a href="#"><i class="fa fa-apple"></i></a>
+					    <a href="#"><i class="fa fa-youtube"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-spotify"></i></a>
+                    </div> 
+                    <div class="copyright">&copy; Copyright 2019, www.$exualInvestment$.com</div>
+            </body>
+
+
+
+
+
+</html>                
